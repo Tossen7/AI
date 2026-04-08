@@ -2,11 +2,6 @@ import xmlrpc.client
 import openai
 
 # --- CONFIGURATION ---
-URL = "https://qcoffee.odoo.com"
-DB = "qcoffee"
-USER_EMAIL = "tharcisse@questioncoffee.com"
-API_KEY = "06eba304b4c684be9079e54b4c31b4cc0c9ce3db"
-openai.api_key = "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"
 
 def get_odoo_connection():
     common = xmlrpc.client.ServerProxy(f'{URL}/xmlrpc/2/common')
